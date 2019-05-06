@@ -14,7 +14,7 @@ module.exports.list = (req, res) => {
       return handleError(res, err);
     }
     res.status(200).json({
-      message: "Colors retrieve succesfully",
+      message: "Colors retrieve successfully",
       data: colors
     });
   });
@@ -26,7 +26,7 @@ module.exports.detail = function(req, res) {
       return handleError(res, err);
     }
     res.status(200).json({
-      message: "Color retrieve succesfully",
+      message: "Color retrieve successfully",
       data: color
     });
   });
@@ -40,9 +40,8 @@ module.exports.create = function(req, res) {
     if (err) {
       return handleError(res, err);
     }
-    res.json({
-      status: "success",
-      message: "Color create succesfully",
+    res.status(200).json({
+      message: "Color create successfully",
       data: color
     });
   });
