@@ -5,7 +5,7 @@ let refProductTypeRouter = require("./routes/ref-product-type");
 let productRouter = require("./routes/product");
 let customerRouter = require("./routes/customer");
 let orderRouter = require("./routes/order");
-let refOrderStatusCodeRouter = require("./routes/ref-order-status");
+let refOrderStatusCodeRouter = require("./routes/ref-order-status-code");
 let orderItemRouter = require("./routes/order-item");
 
 function isEmptyObject(obj) {
