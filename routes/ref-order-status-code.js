@@ -8,7 +8,7 @@ router
   .post(refOrderStatusController.create);
 
 router
-  .route("/ref-order-status-codes/:ref_order_status_code_id")
+  .route("/ref-order-status-codes/:order_status_id")
   .get(refOrderStatusController.detail)
   .put(refOrderStatusController.update)
   .patch(refOrderStatusController.update)
