@@ -25,8 +25,8 @@ module.exports.create = (req, res) => {
     if (err) {
       return handleError(res, err);
     }
-    res.status(201).json({
-      message: "Create customer successfully",
+    res.status(200).json({
+      message: "Customer create successfully",
       data: customer
     });
   });
