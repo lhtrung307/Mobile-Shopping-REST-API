@@ -26,8 +26,8 @@ module.exports.create = (req, res) => {
     if (err) {
       return handleError(res, err);
     }
-    res.status(201).json({
-      message: "Order created",
+    res.status(200).json({
+      message: "Order create successfully",
       data: order
     });
   });
@@ -48,7 +48,7 @@ module.exports.detail = (req, res) => {
 
 module.exports.update = (req, res) => {
   Order.findByIdAndUpdate(
-    req.param.order_id,
+    req.params.order_id,
     req.body,
     { new: true },
     (err, order) => {
@@ -56,7 +56,7 @@ module.exports.update = (req, res) => {
         return handleError(res, err);
       }
       res.status(200).json({
-        message: "Order Updated",
+        message: "Order updated",
         data: order
       });
     }
