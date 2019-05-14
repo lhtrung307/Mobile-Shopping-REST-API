@@ -36,7 +36,7 @@ module.exports.create = function(req, res) {
       return handleError(res, err);
     }
     res.status(200).json({
-      message: "Create Product successfully",
+      message: "Product create successfully",
       data: product
     });
   });
